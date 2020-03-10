@@ -1,0 +1,27 @@
+
+using System;
+
+namespace Recursion
+{
+    class Program
+    {
+        // # TODO: Get this code to work and return the value of the Factorial
+        // You will need to use the Debugger to figure out what is going on with the recursion
+        // Pay attention to the Stack Frames!!!!
+        int factorial = 1;
+        static void Main(string[] args)
+        {
+            Program p1 = new Program();
+            int k = p1.Factorial(4);
+            Console.WriteLine("answer is{0}", k);
+
+        }
+    }
+    public int Factorial(int input)
+    {
+        factorial *= input--;
+        if (input < 1) return factorial;
+        return Factorial(input);
+    }
+
+}
